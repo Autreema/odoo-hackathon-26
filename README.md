@@ -1,203 +1,317 @@
-# TransitOps 
-## Smart Transport Operations Platform
+# 🚍 TransitOps
 
-TransitOps is a full-stack fleet management platform designed to digitize transport operations by managing vehicles, drivers, trips, maintenance, fuel expenses, and operational analytics in one centralized system.
+**Smart Transport Operations Platform**
 
-The platform helps logistics teams improve fleet visibility, automate dispatch workflows, monitor vehicle health, and optimize operational costs.
+TransitOps is a modern full-stack fleet management platform that digitizes transport operations by providing a centralized system for managing vehicles, drivers, trips, maintenance, fuel expenses, and operational analytics.
 
-
-
-live demo link :  https://femmehaker-38h5.vercel.app
-
+Designed for logistics teams and fleet operators, TransitOps improves fleet visibility, automates dispatch workflows, monitors vehicle health, and enables data-driven decision-making to reduce operational costs and improve efficiency.
 
 ---
 
-#  Key Features
+## 🌐 Live Demo
 
-##  Authentication & Role-Based Access
-
-- Secure login system
-- Role-based dashboards
-- User access control
-
-Demo Roles:
-
-- Fleet Manager
-- Dispatcher
-- Safety Officer
-- Finance Analyst
-
+**Application:** https://femmehaker-38h5.vercel.app
 
 ---
 
-#  Smart Dashboard
+# 📖 Overview
 
-Provides real-time operational insights:
+Managing transportation operations manually often leads to scheduling conflicts, inefficient fleet utilization, delayed maintenance, and poor operational visibility.
 
-- Total Vehicles
-- Available Vehicles
-- Vehicles On Trip
-- Maintenance Vehicles
-- Active Trips
-- Drivers On Duty
-- Fleet Utilization
+TransitOps addresses these challenges through an integrated platform that allows organizations to:
 
-Includes:
-
-- Performance charts
-- Cost analysis
-- Fuel analytics
-- Operational insights
-
+* Manage the complete fleet lifecycle
+* Monitor vehicle availability
+* Assign drivers intelligently
+* Schedule and track trips
+* Record maintenance activities
+* Monitor fuel usage and expenses
+* Analyze fleet performance using interactive dashboards
 
 ---
 
-#  Vehicle Management
+# ✨ Key Features
 
-Complete vehicle lifecycle management:
+## 🔐 Authentication & Role-Based Access
 
-Features:
+* Secure user authentication
+* Role-based authorization
+* Protected application routes
+* Personalized dashboards
 
-- Add vehicles
-- Update vehicle details
-- Delete vehicles
-- Track availability
-- Monitor vehicle status
+### Demo Roles
 
-Vehicle statuses:
-
-- Available
-- On Trip
-- In Shop
-- Retired
-
+* Fleet Manager
+* Dispatcher
+* Safety Officer
+* Finance Analyst
 
 ---
 
-#  Driver Management
+## 📊 Smart Dashboard
 
-Manage driver information:
+The dashboard provides a real-time overview of fleet operations.
 
-- Driver profiles
-- License tracking
-- Safety score monitoring
-- Driver availability
+### Fleet Metrics
 
-Validation:
+* Total Vehicles
+* Available Vehicles
+* Vehicles on Trip
+* Vehicles Under Maintenance
+* Active Trips
+* Drivers on Duty
+* Fleet Utilization Rate
 
-- Expired licenses cannot be assigned
-- Suspended drivers cannot be assigned
+### Analytics
 
-
----
-
-#  Trip Management
-
-Smart dispatch workflow:
-
-Trip lifecycle:
-
-Draft → Dispatched → Completed → Cancelled
-
-
-Business automation:
-
-- Vehicle status automatically updates
-- Driver status automatically updates
-- Cargo capacity validation
-- Prevents duplicate assignments
-
+* Fleet performance
+* Operational trends
+* Cost analysis
+* Fuel analytics
+* Vehicle utilization insights
 
 ---
 
-#  Maintenance Management
+## 🚚 Vehicle Management
 
-Track vehicle maintenance:
+Manage the complete lifecycle of fleet vehicles.
 
-- Create maintenance records
-- Monitor repair history
-- Automatically move vehicles to "In Shop"
-- Restore availability after completion
+### Features
 
+* Add vehicles
+* Edit vehicle information
+* Delete vehicles
+* Track vehicle availability
+* Monitor operational status
 
----
+### Vehicle Status
 
-#  Fuel & Expense Management
-
-Track:
-
-- Fuel consumption
-- Fuel cost
-- Maintenance expenses
-- Operational expenses
-
-
-Analytics:
-
-- Fuel efficiency
-- Total operational cost
-- Vehicle ROI
-
+* Available
+* On Trip
+* In Shop
+* Retired
 
 ---
 
-#  Analytics Dashboard
+## 👨‍✈️ Driver Management
 
-Provides:
+Maintain driver information and assignment eligibility.
 
-- Fleet utilization
-- Cost analysis
-- Fuel efficiency reports
-- Exportable reports
+### Features
 
+* Driver profiles
+* License management
+* Safety score monitoring
+* Availability tracking
+
+### Business Rules
+
+* Drivers with expired licenses cannot be assigned.
+* Suspended drivers cannot be assigned.
+* Duplicate driver assignments are prevented.
 
 ---
 
-#  Technology Stack
+## 🛣️ Trip Management
+
+Automate transport operations using an intelligent dispatch workflow.
+
+### Trip Lifecycle
+
+```text
+Draft
+   │
+   ▼
+Dispatched
+   │
+   ▼
+Completed
+
+or
+
+Cancelled
+```
+
+### Automation
+
+* Automatic vehicle status updates
+* Automatic driver status updates
+* Cargo capacity validation
+* Prevents duplicate vehicle assignments
+* Prevents duplicate driver assignments
+
+---
+
+## 🔧 Maintenance Management
+
+Maintain vehicle health through preventive and corrective maintenance tracking.
+
+### Features
+
+* Create maintenance records
+* Record repair history
+* Automatically move vehicles to **In Shop**
+* Restore vehicle availability after maintenance completion
+
+---
+
+## ⛽ Fuel & Expense Management
+
+Monitor operational expenses in a centralized dashboard.
+
+### Track
+
+* Fuel consumption
+* Fuel expenses
+* Maintenance costs
+* Other operational expenses
+
+### Analytics
+
+* Fuel efficiency
+* Operating cost
+* Vehicle ROI
+* Expense reports
+
+---
+
+## 📈 Analytics Dashboard
+
+Generate operational insights for better business decisions.
+
+### Reports
+
+* Fleet utilization
+* Vehicle performance
+* Fuel efficiency
+* Operational cost analysis
+* Exportable reports
+
+---
+
+# 🛠 Technology Stack
 
 ## Frontend
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Recharts
-- Lucide Icons
-
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Recharts
+* Lucide React
 
 ## Backend
 
-- REST API Architecture
-- Python Flask
-
+* Python
+* Flask
+* REST API
 
 ## Database
 
-- SQLite / MySQL
+* SQLite
+* MySQL
 
+## Deployment
 
-## Tools
+* Vercel
 
-- GitHub
-- VS Code
-- Vercel Deployment
+## Development Tools
 
+* Git
+* GitHub
+* VS Code
 
 ---
 
-#  Project Structure
-TransitOps
+# 📁 Project Structure
 
-├── frontend
-│ ├── React Application
-│ ├── Components
-│ └── Dashboard UI
+```text
+TransitOps/
 │
-├── backend
-│ ├── Flask API
-│ ├── Database
-│ └── Services
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── hooks/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── types/
+│   │   ├── utils/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   │
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── vite.config.ts
 │
-└── README.md
+├── backend/
+│   ├── app.py
+│   ├── config.py
+│   ├── requirements.txt
+│   ├── database/
+│   ├── routes/
+│   ├── services/
+│   └── utils/
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/your-username/TransitOps.git
+cd TransitOps
+```
+
+---
+
+## Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend will be available at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+The backend server will start locally.
+
+---
+
+# 🔧 Environment Variables
+
+Create a `.env` file inside the backend directory.
+
+```env
+SECRET_KEY=your_secret_key
+DATABASE_URL=your_database_url
+```
 
 
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
